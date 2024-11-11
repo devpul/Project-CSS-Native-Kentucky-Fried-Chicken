@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: black;
+}
+
+body.active{
+    background-color: #111 ;
+    color: #fff;
+}
+
+/* SLIDE LANDING PAGE */
+
+.landing-page .slider img:not(img:first-child){
+    display: none;
+}
+
+.landing-page{
+
+    margin:auto;
+    position: relative;
+}
+
+.landing-page .slider img{
+    width: 100%;
+   
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    top:0;
+    bottom: 50px;
+    width: 100%;
+}
+
+.arrow button{
+    padding: 0.1rem;
+    background-color: transparent;
+    border-radius: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 4em;
+    font-weight: 600;
+    z-index: 2;
+    color: #eee;
+}
+
+.arrow button:hover{
+    color:#111;
+}
+
+/* END */
+
+
+
+/* SLIDER KFC */
+.slides  img:not(img:first-child){
+    display: none;
+}
+
+.banner{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    object-fit: contain;
+}
+
+.slides img{
+    width: 100%;
+    margin: auto;
+}
+
+
+.banner .navigation{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top:55%;
+    width: 100%;
+}
+
+.navigation button{
+    padding: 0.1rem;
+    background-color: transparent;
+    border-radius: 100%;
+    margin-bottom: 0.5rem;
+    color: red;
+    font-size: 4em;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.navigation button:hover{
+    color: black;
+}
+/* END  */
+
+.all-title h1{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 30pt;
+    letter-spacing: 5px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 5rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: #eee;
+}
+
+.navbar-links{
+    align-items: center;
+    display: inline-flex;
+    gap:3rem;
+    
+}
+
+.links{
+    display: inline-flex;
+    gap:3rem; 
+    
+}
+
+.links a{
+    font-weight: 500;
+    color:black;
+    font-size: 1.3em;
+}
+
+.links-mob{
+    display: none;
+}
+
+
+/* ABOUT */
+.about{
+
+
+    display: flex;
+    gap:1rem;
+    width: 70%;
+
+    margin: auto;
+    padding:1rem;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 1px 1px 5px #ddd;
+
+    background-color: #eee;
+
+}
+.about-image{
+    text-align: center;
+}
+
+.about-image img{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+}
+
+.about-description h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-description p{
+    /* background-color: yellow; */
+    text-indent: 10%;
+
+}
+
+
+/* END */
+
+
+
+/* MENU */
+.wrapper{
+    margin-top: 5rem;
+    display: flex;
+    gap:3rem;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    text-align: center;
+    padding: 5rem;
+    /* background-color: slateblue; */
+
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 1px 1px 5px #ddd;
+
+   height: 200px;
+
+}
+
+.card#s1{
+    background-image: url('assets/kfc1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card#s2{
+    background-image: url('assets/kfc2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card#s3{
+    background-image: url('assets/kfc3.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card#s4{
+    background-image: url('assets/kfc4.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card#s5{
+    background-image: url('assets/kfc5.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card#s6{
+    background-image: url('assets/kfc6.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.card#s7{
+    background-image: url('assets/kfc1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card#s8{
+    background-image: url('assets/kfc2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card#s6{
+    background-image: url('assets/kfc6.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn{
+    margin-top:5rem;
+    border: 3px solid red;
+    background-color: red;
+    color: #fff;
+    padding: 0.7rem 3rem;
+    font-weight: 700;
+    font-size: 1.2em;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    border: 3px solid red;
+    background-color: #fff;
+    color: black;
+}
+
+/* end */
+
+/* Sidebar Start*/
+.sidebar{
+    display:none;
+
+    
+    
+}
+
+/* =================== INTERAKSI DENGAN JAVASCRIPT ===================*/
+.sidebar.active{
+    display: block;
+    
+    width: 100%;
+    position: absolute;
+   
+    text-align: center;
+    padding:5px;
+    
+    z-index: 999999; 
+   background-image: url('assets/bg-kfc.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   /* background-attachment: fixed; */
+   transition: 1s;
+    
+}
+
+.sidebar.active .links{
+    
+    margin: 5rem 0;
+    flex-direction: column;
+    gap:5rem;
+    position: sticky;    
+}
+
+
+.sidebar .links a{
+    padding:1rem 5rem;
+    transition: all 0.5s ease;
+    font-weight: 700;
+
+}
+
+
+.sidebar .links a:hover{
+    background-color: red;
+    color: #fff;
+}
+
+
+.btn-sidebar{
+    font-size: 20pt;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+
+/* end*/
+
+
+
+
+
+
+/* CONTACT START */
+.contact{
+    display: flex;
+    justify-content: center;
+
+    /* KFC COLUMN */
+    flex-direction: column;
+
+}
+
+
+
+.contact form{
+    display: flex;
+
+    width: 50%;
+    margin: auto;
+
+    border-radius: 10px;
+    border:1px solid #ddd;
+}
+
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+label{
+    font-weight: 600;
+}
+
+form .form-left{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    gap:0.65rem;
+}
+
+form .form-right{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    gap:0.65rem;
+}
+
+form input,form select{
+    background-color: #eee;
+    width: 440px;
+    height: 30px;
+    padding:5px 5px 5px 10px;
+}
+
+
+#komentar input{
+   
+    padding-top:5%;
+    padding-bottom: 50%;
+}
+
+.btn-submit{
+    margin-top:1rem;
+    background-color: red;
+    text-align: center;
+    padding: 0.7rem 0;
+  
+    
+}
+
+.btn-submit a{
+    color:#fff;
+}
+
+
+
+
+
+
+/* End */
+
+.footer{
+   
+    margin-top: 6rem;
+    
+    height: 65vh;
+
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-image: url('assets/bg-kfc.jpg');
+    background-position: center;
+    background-size: 100%;
+
+    background-attachment:fixed;
+
+    background-repeat: no-repeat;
+}
+
+.footer-mid{
+    margin-top: 2rem;
+    display: flex;
+    gap:3rem;
+    justify-content: center;
+}
+
+.footer-mid .socmed{
+    padding:1rem;
+    /* background-color: cyan; */
+    font-size: auto;
+    
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-bottom: -4rem;
+
+}
+
+@media screen and (max-width: 1900px){
+    form input, form select{
+        width:300px; 
+    }
+}
+
+@media screen and (max-width : 1700px){
+    .about{
+         display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .card{
+        width: 20%;
+    }
+}
+
+/* Desktop kecil */
+@media screen  and (max-width: 1200px){
+    .navbar{
+        padding: 0.75rem 0.5rem;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .navbar-links .links{
+        display: none;
+    }
+
+    .links-mob{
+        display: block;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    form input, form select{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+    .footer{
+        position: relative;
+    }
+
+    .about-image img{
+
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    form{
+        display: flex;
+        flex-direction: column; 
+        width: 50%;
+        margin:auto;
+    }
+
+    .form-right{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+}
+
+/* tablet */
+@media screen  and (max-width: 900px){
+    .navbar{
+        padding: 0.75rem 0.5rem;
+    }
+
+    .about{
+        width: 90%;
+    }
+    
+    .wrapper{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    .footer{
+        position: relative;
+       
+    }
+
+    .footer-mid{
+        display: inline-flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+   
+}
+
+@media screen and (max-width: 600px){
+    .contact form{
+        width: 90%;
+    }
+    
+    .landing-page .slider img{
+        height: 400px;
+    }
+}
+
+
+/* hp */
+@media screen and (max-width: 476px){
+    .navbar{
+        padding: 0.75rem 0.5rem;
+    }
+
+
+
+    .wrapper{
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+
+    .card{
+        width: 95%;
+
+    }
+    .footer-mid{
+        gap:1rem;
+    }
+}
